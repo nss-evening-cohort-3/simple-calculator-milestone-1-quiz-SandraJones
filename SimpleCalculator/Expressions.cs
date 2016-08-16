@@ -8,8 +8,6 @@ namespace SimpleCalculator
 {
     public class Expressions: Integer
     {
-        Expressions myFirstExpression = new Expressions();
-        Expressions mySecondExpression = new Expressions();
     }
     
 }

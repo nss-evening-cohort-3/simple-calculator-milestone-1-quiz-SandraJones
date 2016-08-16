@@ -7,8 +7,12 @@ namespace SimpleCalculator.Tests
     public class ExpressionsTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void InstancesOfExpressions()
         {
+            Expressions myFirstExpression = new Expressions();
+            Expressions mySecondExpression = new Expressions();
+            Assert.IsNotNull(myFirstExpression);
+            Assert.IsNotNull(mySecondExpression);
         }
     }
 }
