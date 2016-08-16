@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Expressions: Integer
+    public class Expressions: Integer
     {
+        Expressions myFirstExpression = new Expressions();
+        Expressions mySecondExpression = new Expressions();
     }
+    
 }
