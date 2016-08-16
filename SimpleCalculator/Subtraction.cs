@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace SimpleCalculator
 {
 
-    class Subtraction
+    public class Subtraction
     {
+        //create a  subtraction method here
+        public int SubtractTwoNumbers(int number1, int number2)
+        {
+            return number1 - number2;
+        }
     }
 }

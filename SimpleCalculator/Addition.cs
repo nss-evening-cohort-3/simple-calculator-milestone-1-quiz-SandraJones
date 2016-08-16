@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Addition
+    public class Addition
     {
+        //create an addition method here
+        public int AddTwoNumbers(int number1, int number2)
+        {
+            return number1 + number2;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Stack: Constants
+    public class Stack: Constants
     {
     }
 }

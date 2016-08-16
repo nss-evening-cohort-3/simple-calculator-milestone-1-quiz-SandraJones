@@ -61,7 +61,6 @@
     <Compile Include="SubtractionTests.cs" />
     <Compile Include="MultiplicationTests.cs" />
     <Compile Include="DivisionTests.cs" />
-    <Compile Include="IntegerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimpleCalculator\SimpleCalculator.csproj">

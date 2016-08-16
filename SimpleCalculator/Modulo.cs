@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Modulo
+    public class Modulo
     {
+        //create a modulo method here
+        public int ModuloTwoNumbers(int number1, int number2)
+        {
+            return number1 % number2;
+        }
     }
 }

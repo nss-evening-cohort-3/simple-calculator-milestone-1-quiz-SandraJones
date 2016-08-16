@@ -10,6 +10,22 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            //while user is interacting, perform requested calculator functions
+            //while loop
+                //create prompt and increment prompt with each completed task
+            //first user input begins here
+            
+
+
+
+
+
+
+
+
+
+
+            //exit the while loop using 'return;'
         }
     }
 }

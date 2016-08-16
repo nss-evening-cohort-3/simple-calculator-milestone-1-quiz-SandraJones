@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Multiplication
+    public class Multiplication
     {
+        //create a multiplication  method here
+        public int MultiplyTwoNumbers(int number1, int number2)
+        {
+            return number1 * number2;
+        }
     }
 }

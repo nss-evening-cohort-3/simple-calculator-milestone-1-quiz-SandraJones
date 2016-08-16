@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Division
+    public class Division
     {
+        public int DivideTwoNumbers(int number1, int number2)
+        {
+            return number1/number2;
+        }
     }
 }
