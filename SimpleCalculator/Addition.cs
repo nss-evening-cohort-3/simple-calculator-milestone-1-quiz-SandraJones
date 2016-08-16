@@ -11,6 +11,8 @@ namespace SimpleCalculator
         //create an addition method here
         public int AddTwoNumbers(int number1, int number2)
         {
+            // var answerAddTwo = number1 + number2;
+            // return answerAddTwo;
             return number1 + number2;
         }
     }
