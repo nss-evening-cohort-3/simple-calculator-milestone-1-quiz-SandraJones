@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Expressions: Integer
+    public class Expressions: Integer
     {
     }
+    
 }
