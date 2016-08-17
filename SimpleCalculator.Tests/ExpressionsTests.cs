@@ -9,8 +9,8 @@ namespace SimpleCalculator.Tests
         [TestMethod]
         public void InstancesOfExpressions()
         {
-            Expressions myFirstExpression = new Expressions();
-            Expressions mySecondExpression = new Expressions();
+            Subtraction myFirstExpression = new Subtraction();
+            Subtraction mySecondExpression = new Subtraction();
             Assert.IsNotNull(myFirstExpression);
             Assert.IsNotNull(mySecondExpression);
         }
