@@ -9,7 +9,7 @@ namespace SimpleCalculator.Tests
         [TestMethod]
         public void TestInstanceOfRegex()
         {
-            Regex parser = new SimpleCalculator.Regex();
+            RegexParser parser = new SimpleCalculator.RegexParser();
             Assert.IsNotNull(parser);
         }
 
@@ -17,7 +17,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing1()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("1 + 3");
@@ -32,7 +32,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing2()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("31 - 9");
@@ -46,7 +46,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing3()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("23 % 3");
@@ -60,7 +60,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing4()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("-11 + 39");
@@ -74,7 +74,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing5()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("12 / 3");
@@ -88,7 +88,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing6()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("10 * 3");
@@ -102,7 +102,7 @@ namespace SimpleCalculator.Tests
         public void TestParsing7()
         {
             //Arrange - instantiate what is needed
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
 
             //Act - interact with the parser object
             parser.ParseInput("-10 - -5");
@@ -116,7 +116,7 @@ namespace SimpleCalculator.Tests
         [TestMethod]
         public void TestBadInput1()
         {
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
             parser.ParseInput("qoqiergjaorgj");
         }
 
@@ -124,7 +124,7 @@ namespace SimpleCalculator.Tests
         [TestMethod]
         public void TestBadInput2()
         {
-            Regex parser = new Regex();
+            RegexParser parser = new RegexParser();
             parser.ParseInput("10a + b");
         }
     }
