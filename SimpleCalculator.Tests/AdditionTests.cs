@@ -4,11 +4,42 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace SimpleCalculator.Tests
 {
     [TestClass]
-    public class UnitTest2
+    public class AdditionTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestAdditionMethod1()
         {
+            //Arrange
+            Addition addTo = new Addition();
+
+            //Act
+            addTo.AddTwoNumbers(6, -8);
+
+            //Assert
+            Assert.AreEqual(-2, addTo.AddTwoNumbers(6, -8));
+        }
+
+        //****WORK ON TESTADDITIONMETHOD2()****
+        //[ExpectedException(typeof(ArgumentException))]
+        //[TestMethod]
+        //public void TestAdditionMethod2()
+        //{
+        //    //Arrange
+        //    Addition addTo = new Addition();
+
+        //    //Act
+        //    addTo.AddTwoNumbers(2.4, 3.6);
+
+
+        //}
+        [TestMethod]
+        public void TestInstanceOfAddition()
+        {
+            //Arrange
+            Addition addTo = new Addition();
+
+            //Assert
+            Assert.IsNotNull(addTo);
         }
     }
 }

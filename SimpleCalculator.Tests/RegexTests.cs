@@ -127,5 +127,12 @@ namespace SimpleCalculator.Tests
             RegexParser parser = new RegexParser();
             parser.ParseInput("10a + b");
         }
+        [ExpectedException(typeof(ArgumentException))]
+        [TestMethod]
+        public void TestBadInput3()
+        {
+            RegexParser parser = new RegexParser();
+            parser.ParseInput("1.67a + 1/4b");
+        }
     }
 }
