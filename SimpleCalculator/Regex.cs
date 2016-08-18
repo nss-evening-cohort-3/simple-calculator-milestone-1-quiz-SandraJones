@@ -27,11 +27,12 @@ namespace SimpleCalculator
             {
                 throw new ArgumentException("Please enter a valid integer.");
             }
+
         }
 
-        private static Match Match(string userInput, string pattern)
-        {
-            throw new NotImplementedException();
-        }
+        //private static Match Match(string userInput, string pattern)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
