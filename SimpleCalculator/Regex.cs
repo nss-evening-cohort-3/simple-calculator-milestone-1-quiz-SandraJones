@@ -17,7 +17,7 @@ namespace SimpleCalculator
         public void ParseInput(string userInput)
         {
             Match match = Regex.Match(userInput, pattern);
-            if (match.success)
+            if (match.Success)
             {
                 Term1 = int.Parse(match.Groups[1].Value);
                 Term2 = int.Parse(match.Groups[3].Value);
@@ -27,6 +27,11 @@ namespace SimpleCalculator
             {
                 throw new ArgumentException("Please enter a valid integer.");
             }
+        }
+
+        private static Match Match(string userInput, string pattern)
+        {
+            throw new NotImplementedException();
         }
     }
 }
