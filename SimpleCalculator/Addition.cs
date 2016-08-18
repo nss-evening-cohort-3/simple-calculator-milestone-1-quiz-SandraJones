@@ -15,5 +15,10 @@ namespace SimpleCalculator
             // return answerAddTwo;
             return number1 + number2;
         }
+
+        //public void AddTwoNumbers(double v1, double v2)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
