@@ -7,8 +7,10 @@ namespace SimpleCalculator.Tests
     public class EvaluatorTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestInstanceOfEvaluator()
         {
+            Evaluator eval = new Evaluator();
+            Assert.IsNotNull(true);
         }
     }
 }

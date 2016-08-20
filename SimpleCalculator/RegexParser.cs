@@ -23,6 +23,7 @@ namespace SimpleCalculator
                 Term1 = int.Parse(match.Groups[1].Value);
                 Term2 = int.Parse(match.Groups[3].Value);
                 Operator = match.Groups[2].Value[0];
+
             }
             else
             {
