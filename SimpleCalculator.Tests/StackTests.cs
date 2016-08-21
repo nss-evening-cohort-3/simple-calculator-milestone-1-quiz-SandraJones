@@ -7,8 +7,13 @@ namespace SimpleCalculator.Tests
     public class StackTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestInstanceOfStack()
         {
+            //Arrange
+            Stack insertion = new Stack();
+
+            //Assert
+            Assert.IsNotNull(insertion);
         }
     }
 }

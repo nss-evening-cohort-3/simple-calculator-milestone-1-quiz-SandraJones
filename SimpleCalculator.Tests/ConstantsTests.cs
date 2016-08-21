@@ -7,8 +7,9 @@ namespace SimpleCalculator.Tests
     public class ConstantsTests
     { 
         [TestMethod]
-        public void TestMethod1()
+        public void TestInstanceOfConstant()
         {
+
         }
     }
 }

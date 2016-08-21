@@ -13,11 +13,10 @@ namespace SimpleCalculator
         private Multiplication mult = new Multiplication();
         private Modulo mod = new Modulo();
         private Division div = new Division();
-        
+
         public int Calculate(RegexParser parser)
         {
-            //still have to use a switch statement and cases here to 
-            //figure out which operation user wants and then calculate the input at this point
+            //switch statement and cases here to match operation user wants and then calculate the input at this point
             switch (parser.Operator)
             {
                 case '+':

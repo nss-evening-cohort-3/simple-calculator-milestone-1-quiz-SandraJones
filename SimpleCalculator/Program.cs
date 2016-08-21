@@ -11,15 +11,14 @@ namespace SimpleCalculator
         static void Main(string[] args)
         {
             string userInput;
-            int number;
             int i = 0;
             RegexParser parser = new RegexParser();
             Evaluator eval = new Evaluator();
             bool keepLooping = true;
             while (keepLooping)
             {
-                string prompt = "[" + i + "]";
-                Console.WriteLine(prompt, "Enter your math ( eg. 3 + 5) expression here to calculate.");
+                string prompt = "[" + i + "]>";
+                Console.WriteLine(prompt + "Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to quit the application.");
                 userInput = Console.ReadLine();
                 if (userInput == "quit" || userInput == "exit")
                 {
@@ -28,11 +27,14 @@ namespace SimpleCalculator
                 }
                 else if (userInput == "last")
                 {
-                    //print the last whatever;
+                    //call from the Stack Class here
+                    //need to somehow continue past the parsing
+                    //print the last printed answer;
                 }
                 else if (userInput == "lastq")
                 {
-                    //print the lastq thing;
+                    //call a method from the stack class here
+                    //print the last entered command;
                 }
                 else
                 {
@@ -41,12 +43,13 @@ namespace SimpleCalculator
                         parser.ParseInput(userInput);
                         int answer = eval.Calculate(parser);
                         Console.WriteLine(answer);
+                       // answerLast = answerLast.Add<int>(answer);
                     }
                     catch(Exception e)//can have multiple catch blocks to catch lower level exceptions
                     {
                         Console.WriteLine(e.Message);
                     }
-                    i++;
+                    i++;//this line is where my counter increments
                 }
             }
         }
