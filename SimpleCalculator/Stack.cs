@@ -16,9 +16,9 @@ namespace SimpleCalculator
             Evaluator eval = new Evaluator();
             
         }
-        //public int AddToListOfAnswers(int answer)
-        //{
-        //    return answerList.Add(answer);
-        //}
+        public void AddToListOfAnswers(int answer)
+        {
+           answerList.Add(answer);
+        }
     }
 }

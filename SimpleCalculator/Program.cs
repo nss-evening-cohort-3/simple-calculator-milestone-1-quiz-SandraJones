@@ -14,11 +14,12 @@ namespace SimpleCalculator
             int i = 0;
             RegexParser parser = new RegexParser();
             Evaluator eval = new Evaluator();
+            Stack stackList = new Stack();
             bool keepLooping = true;
             while (keepLooping)
             {
                 string prompt = "[" + i + "]>";
-                Console.WriteLine(prompt + "Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to quit the application.");
+                Console.WriteLine(prompt + "Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to stop the application.");
                 userInput = Console.ReadLine();
                 if (userInput == "quit" || userInput == "exit")
                 {
@@ -30,7 +31,7 @@ namespace SimpleCalculator
                     //call from the Stack Class here
                    
                     //print the last printed answer;
-                    Console.WriteLine("answerList");                   
+                    Console.WriteLine(stackList.answerList);                   
                 }
                 else if (userInput == "lastq")
                 {
@@ -48,9 +49,7 @@ namespace SimpleCalculator
 
                         //add this answer to the end of the answerList 
                         //answerList keeps a running List of answers generated
-
-                        List<int> answerList = new List<int>(answer);
-                        answerList.Add(answer);
+                        stackList.AddToListOfAnswers(answer);
 
                     }                       
                     catch(Exception e)//can have multiple catch blocks to catch lower level exceptions
