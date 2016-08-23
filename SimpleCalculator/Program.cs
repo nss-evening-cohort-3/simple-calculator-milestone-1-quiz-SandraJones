@@ -12,6 +12,7 @@ namespace SimpleCalculator
         {
             string userInput;
             int i = 0;
+            int j = 0;
             RegexParser parser = new RegexParser();
             Evaluator eval = new Evaluator();
             Stack stackList = new Stack();
@@ -26,18 +27,17 @@ namespace SimpleCalculator
                     keepLooping = false;
                     continue;
                 }
+                
                 else if (userInput == "last")
-                {
-                    //call from the Stack Class here
-                   
-                    //print the last printed answer;
-                    Console.WriteLine(stackList.answerList);                   
+                {                    
+                            Console.WriteLine(stackList.answerList.Last());                    
                 }
                 else if (userInput == "lastq")
                 {
                     //call a method from the stack class here
                     //print the last entered command;
-                    Console.WriteLine("Last command");
+                    //storing last userInput;
+                    Console.WriteLine(userInput);
                 }
                 else
                 {
