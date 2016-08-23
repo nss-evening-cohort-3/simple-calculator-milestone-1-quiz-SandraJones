@@ -8,9 +8,17 @@ namespace SimpleCalculator
 {
     public class Stack
     {
-        RegexParser parser = new RegexParser();
-        Stack lastAnswer = new Stack();
-        Evaluator eval = new Evaluator();
-        List<int> answerList = new List<int>();
+        public List<int> answerList = new List<int>(); 
+
+        public  Stack()
+        {
+            RegexParser parser = new RegexParser();
+            Evaluator eval = new Evaluator();
+            
+        }
+        //public int AddToListOfAnswers(int answer)
+        //{
+        //    return answerList.Add(answer);
+        //}
     }
 }

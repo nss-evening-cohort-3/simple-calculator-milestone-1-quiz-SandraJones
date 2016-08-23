@@ -28,13 +28,15 @@ namespace SimpleCalculator
                 else if (userInput == "last")
                 {
                     //call from the Stack Class here
-                    //need to somehow continue past the parsing
+                   
                     //print the last printed answer;
+                    Console.WriteLine("answerList");                   
                 }
                 else if (userInput == "lastq")
                 {
                     //call a method from the stack class here
                     //print the last entered command;
+                    Console.WriteLine("Last command");
                 }
                 else
                 {
@@ -43,8 +45,14 @@ namespace SimpleCalculator
                         parser.ParseInput(userInput);
                         int answer = eval.Calculate(parser);
                         Console.WriteLine(answer);
-                       // answerLast = answerLast.Add<int>(answer);
-                    }
+
+                        //add this answer to the end of the answerList 
+                        //answerList keeps a running List of answers generated
+
+                        List<int> answerList = new List<int>(answer);
+                        answerList.Add(answer);
+
+                    }                       
                     catch(Exception e)//can have multiple catch blocks to catch lower level exceptions
                     {
                         Console.WriteLine(e.Message);

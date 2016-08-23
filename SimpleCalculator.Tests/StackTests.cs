@@ -15,5 +15,7 @@ namespace SimpleCalculator.Tests
             //Assert
             Assert.IsNotNull(insertion);
         }
+
     }
 }
+
