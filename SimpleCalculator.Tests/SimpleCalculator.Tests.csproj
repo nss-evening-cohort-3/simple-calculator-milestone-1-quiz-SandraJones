@@ -63,7 +63,7 @@
     <Compile Include="RegexTests.cs" />
     <Compile Include="EvaluatorTests.cs" />
     <Compile Include="StackTests.cs" />
-    <Compile Include="DictionaryItemTests.cs" />
+    <Compile Include="StoredVariablesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimpleCalculator\SimpleCalculator.csproj">
