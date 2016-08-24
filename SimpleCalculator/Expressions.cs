@@ -9,17 +9,15 @@ namespace SimpleCalculator
     public class Expressions
     {
         
-        public string userResponse;
-        //*************WORKING ON THIS ******************
-        //possibly use String.Comparer 
+      public string userResponse;
+       
+      public StringComparer OrdinalIgnoreCase {get;}
+      public string quit = "quit";
+      public string exit = "exit";
+      public string last = "last";
+      public string lastq = "lastq";
 
-        public StringComparer OrdinalIgnoreCase {get;}
-        public string quit = "quit";
-        public string exit = "exit";
-        public string last = "last";
-        public string lastq = "lastq";
-
-        int AddTwoNumbers(int number1, int number2)
+      int AddTwoNumbers(int number1, int number2)
       {
             return number1 + number2;
       }
