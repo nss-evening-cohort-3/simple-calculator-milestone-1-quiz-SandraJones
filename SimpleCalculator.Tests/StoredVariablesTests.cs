@@ -8,9 +8,11 @@ namespace SimpleCalculator.Tests
     {
         
         [TestMethod]
-        public void TestInstanceOfStoredVariables()
-        {
+        public void TestInstanceOfVariable()
+        { 
+            //Arrange
             StoredVariables instanceOne = new StoredVariables();
+            //Assert
             Assert.IsNotNull(instanceOne);
         }
     }

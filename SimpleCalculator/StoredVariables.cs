@@ -8,9 +8,12 @@ namespace SimpleCalculator
 {
     public class StoredVariables
     {
-        public StoredVariables myDictionary = new StoredVariables();
+        public void variable()
+        { }
         //create the ability to enter a variable and assign it a value
         private string kvp = @"^([a-zA-Z]\s*(['='])\s*\d*)$";
+
         private Dictionary<char, int> variables = new Dictionary<char, int>();
+
     }
 }
