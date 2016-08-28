@@ -19,8 +19,9 @@ namespace SimpleCalculator
             bool keepLooping = true;
             while (keepLooping)
             {
-                string prompt = "[" + i + "]>";
-                Console.WriteLine(prompt + "Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to stop the application.");
+                string prompt;
+                Console.WriteLine("Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to stop the application.");
+                Console.Write(prompt = "[" + i + "]>");
                 userInput = Console.ReadLine();
                 if (userInput == "quit" || userInput == "exit")
                 {
@@ -56,7 +57,7 @@ namespace SimpleCalculator
                     {
                         Console.WriteLine(e.Message);
                     }
-                    i++;//this line is where my counter increments
+                    i++;
                 }
             }
         }
