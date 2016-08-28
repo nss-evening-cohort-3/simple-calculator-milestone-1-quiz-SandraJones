@@ -8,8 +8,9 @@ namespace SimpleCalculator
 {
     public class Stack
     {
-        public List<int> answerList = new List<int>(); 
-
+        public List<int> answerList = new List<int>();
+        public List<string> lastCommandList = new List<string>(); 
+        public string userInput;
         public  Stack()
         {
             RegexParser parser = new RegexParser();
@@ -20,6 +21,10 @@ namespace SimpleCalculator
         {
            answerList.Add(answer);
         }
-        
+        public void AddToListOfCommands(string userInput)
+        {
+            lastCommandList.Add(userInput);
+        }
+
     }
 }

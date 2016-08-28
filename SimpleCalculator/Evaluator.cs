@@ -16,7 +16,8 @@ namespace SimpleCalculator
 
         public int Calculate(RegexParser parser)
         {
-            //switch statement and cases here to match operation user wants and then calculate the input at this point
+            //Switch statement and cases here are to match operation user wants, 
+            //and then calculate the input at this point.
             switch (parser.Operator)
             {
                 case '+':
