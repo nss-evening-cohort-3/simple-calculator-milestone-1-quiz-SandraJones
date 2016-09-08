@@ -22,9 +22,7 @@ namespace SimpleCalculator
                 Console.WriteLine("Enter your math expression, ( eg. 3 + 5), here to calculate, or type exit or quit to stop the application.");
                 Console.Write(prompt = "[" + i + "]>");
                 userInput = Console.ReadLine();
-                //add last command to lastCommandList;
-                //keep a running list of commands given by user
-                stackList.AddToListOfCommands(userInput);
+                
                 if (userInput == "quit" || userInput == "exit")
                 {
                     keepLooping = false;
@@ -39,7 +37,7 @@ namespace SimpleCalculator
                 {
                     //print the last entered command;
                     //storing last userInput;
-                   //Console.Write(stackList.lastCommandList.Last());
+                   Console.Write(stackList.lastCommandList.Last());
 
                 }
                 else
@@ -50,16 +48,16 @@ namespace SimpleCalculator
                         int answer = eval.Calculate(parser);
                         Console.WriteLine(answer);
                         string lastExp = userInput;
+                        //add last command to lastCommandList;
+                        //keep a running list of commands given by user
+                        //stackList.AddToListOfCommands(userInput);
                         userInput.ToString();
                         stackList.AddToListOfCommands(userInput);
-
 
                         //add this answer to the end of the answerList 
                         //answerList keeps a running List of answers generated
                         stackList.AddToListOfAnswers(answer);
-                        //add last command to lastCommandList;
-                        //keep a running list of commands given by user
-                        //stackList.AddToListOfCommands(userInput);
+                        
                     }                       
                     catch(Exception e)//can have multiple catch blocks to catch lower level exceptions
                     {

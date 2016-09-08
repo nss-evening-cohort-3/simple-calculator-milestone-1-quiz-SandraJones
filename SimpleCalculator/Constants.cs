@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class Constants
+    public static  class Constants
     {
-        //public Dictionary myDictionary = new Dictionary();
-
-       // public int FahrenheitFreezingPoint = 32;
+        public static string SomeConstant
+        {
+            get
+            {
+                return "Some value";
+            }
+        }
     }
 }
