@@ -10,7 +10,7 @@ namespace SimpleCalculator
     {
         public List<int> answerList = new List<int>();
         public List<string> lastCommandList = new List<string>(); 
-        public string userInput;
+        
         public  Stack()
         {
             RegexParser parser = new RegexParser();

@@ -39,7 +39,8 @@ namespace SimpleCalculator
                 {
                     //print the last entered command;
                     //storing last userInput;
-                  Console.Write(stackList.lastCommandList.Last());
+                   //Console.Write(stackList.lastCommandList.Last());
+
                 }
                 else
                 {
@@ -49,6 +50,7 @@ namespace SimpleCalculator
                         int answer = eval.Calculate(parser);
                         Console.WriteLine(answer);
                         string lastExp = userInput;
+                        userInput.ToString();
                         stackList.AddToListOfCommands(userInput);
 
 
