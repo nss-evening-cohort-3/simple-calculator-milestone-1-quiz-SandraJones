@@ -48,6 +48,9 @@ namespace SimpleCalculator
                         parser.ParseInput(userInput);
                         int answer = eval.Calculate(parser);
                         Console.WriteLine(answer);
+                        string lastExp = userInput;
+                        stackList.AddToListOfCommands(userInput);
+
 
                         //add this answer to the end of the answerList 
                         //answerList keeps a running List of answers generated
