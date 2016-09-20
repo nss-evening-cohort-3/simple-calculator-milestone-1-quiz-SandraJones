@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public static  class Constants
+    public class Constants
     {
-        public static string SomeConstant
+        private Dictionary<char, int> storeConstantsDictionary = new Dictionary<char, int>();
+        public void UserCreateAConstToAddToDictionary(char key, int value)
         {
-            get
+           
+            
+            if (storeConstantsDictionary.ContainsKey(key))
             {
-                return "Some value";
+                throw new ArgumentException("That constant already exists.");
+            }
+            else
+            {
+                storeConstantsDictionary.Add(key, value);//.Add(key, value)
             }
         }
+        public int ReturnValueOfConstant(char key)
+        {
+            return storeConstantsDictionary[key];
+        }
+
     }
 }

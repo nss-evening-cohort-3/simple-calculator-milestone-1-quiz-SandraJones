@@ -5,11 +5,11 @@ namespace SimpleCalculator.Tests
 {
     [TestClass]
     public class ConstantsTests
-    { 
+    {
         [TestMethod]
         public void TestInstanceOfConstant()
         {
 
         }
     }
-}
+};
