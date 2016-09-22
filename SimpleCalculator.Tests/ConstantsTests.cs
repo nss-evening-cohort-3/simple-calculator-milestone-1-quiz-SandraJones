@@ -9,7 +9,8 @@ namespace SimpleCalculator.Tests
         [TestMethod]
         public void TestInstanceOfConstant()
         {
-
+            Constants _constant = new Constants();
+            Assert.IsNotNull(_constant);
         }
     }
 };

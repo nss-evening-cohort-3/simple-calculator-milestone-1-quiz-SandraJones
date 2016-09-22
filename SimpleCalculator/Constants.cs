@@ -24,7 +24,14 @@ namespace SimpleCalculator
         }
         public int ReturnValueOfConstant(char key)
         {
-            return storeConstantsDictionary[key];
+            if (storeConstantsDictionary.ContainsKey(key))
+            {
+                return storeConstantsDictionary[key];
+            }
+            else
+            {
+                throw new ArgumentException("You are free to set that constant by entering it in this form:  v = 45, with the variable on the left and the value to the right of the equals sign.");
+            }     
         }
 
     }

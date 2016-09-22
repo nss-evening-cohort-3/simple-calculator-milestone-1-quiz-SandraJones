@@ -26,7 +26,7 @@ namespace SimpleCalculator
                 Console.Write(prompt = "[" + i + "]>");
                 userInput = Console.ReadLine();
 
-                string kvp = null;
+               // string kvp = null;
                 if (userInput == "quit" || userInput == "exit")
                 {
                     keepLooping = false;
@@ -45,7 +45,8 @@ namespace SimpleCalculator
                 }
                 else if (userInput.Contains('='))
                 {
-                     parser.parseConstant(userInput);
+                   parser.parseConstant(userInput);
+                    Console.WriteLine("Your constant has been saved.");
                 }
                 else
                 {

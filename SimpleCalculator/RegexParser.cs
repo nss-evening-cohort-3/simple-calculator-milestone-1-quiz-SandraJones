@@ -18,14 +18,22 @@ namespace SimpleCalculator
         public void ParseInput(string userInput)
         {
             Match match = Regex.Match(userInput, pattern);
-
+           
             if (match.Success)
             {
-                Term1 = int.Parse(match.Groups[1].Value);
+                //checks if we can parse to an integer and then if we cannot parse it, we get the value of it from our dictionary 
+                int firstTerm;
+                bool canParse = int.TryParse(match.Groups[1].Value, out firstTerm);
+                if (!canParse)
+                {
+                    char termA = char.Parse(match.Groups[1].Value);
+                    firstTerm = constants.ReturnValueOfConstant(termA);
+                }
+                Term1 = firstTerm;
+
                 Term2 = int.Parse(match.Groups[3].Value);
-                Operator = match.Groups[2].Value[0];
-                //check value then
-            }
+                Operator = match.Groups[2].Value[0];               
+            }          
             else
             {
                 throw new ArgumentException("Please enter a valid integer.");
